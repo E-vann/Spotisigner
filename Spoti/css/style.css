@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap');
+html {
+    background-color: #212121;
+    color: white;
+    font-family: montserrat;
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+#loader {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    background-color: #262626;
+    transition-duration: 1s;
+}
+
+#loader img {
+    width: 60vw;
+}
+
+#left {
+    text-align: center;
+    margin-top: 20vh;
+    width: 20vw;
+}
+
+#left h1 {
+    color: #1DB954;
+    font-size: 30pt;
+}
+
+#left h2 {
+    margin-bottom: 20%;
+    font-size: 20pt;
+}
+
+#left p:nth-of-type(2) {
+    animation: 1s bounce infinite;
+}
+
+@keyframes bounce {
+    from {
+        color: #1db954;
+    }
+    to {
+        color: #ffffff;
+    }
+}
+
+#social {
+    display: block;
+    margin-top: 40vh;
+}
+
+svg {
+    width: 60px;
+    height: 60px;
+    margin: 0 2%;
+    margin-top: 20%;
+}
+
+svg :hover {
+    fill: #1db954;
+    transition-duration: 500ms;
+}
+
+
+/*centre*/
+
+#center {
+    margin-top: auto;
+    width: 370px;
+    background-color: #121212;
+    border-radius: 30px;
+    border: solid 15px #121212;
+    display: block;
+    flex-direction: column;
+    height: 750px;
+    ;
+}
+
+#entete p:nth-child(1) {
+    opacity: 0.8;
+    font-size: 8pt;
+    margin: 0;
+    margin-bottom: 1%;
+}
+
+#entete p:nth-child(2) {
+    font-weight: bold;
+    margin: 0
+}
+
+form {
+    text-align: center;
+}
+
+#label {
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #1db954;
+    padding: 3% 5%;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 100px;
+    transition-duration: 500ms;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    right: 15%;
+}
+
+#label:hover {
+    font-size: 96%;
+    opacity: 0.9;
+}
+
+#upload {
+    display: none;
+}
+
+#visu {
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#canva {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 20%;
+    margin-top: 10%;
+    border: none;
+}
+
+#lecteur textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    border-radius: none;
+    color: white;
+    font-family: montserrat;
+    padding: 0;
+    margin: 0;
+}
+
+#lecteur textarea:nth-child(1) {
+    font-weight: bold;
+    font-size: 120%;
+    opacity: 1;
+}
+
+#lecteur textarea:nth-child(2) {
+    opacity: 0.8;
+}
+
+#lecteur {
+    width: 350px;
+}
+
+#timeline {
+    width: 350px;
+    margin-bottom: 1%;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    align-items: center
+}
+
+#time {
+    display: inline-flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+#controls>img:hover {
+    opacity: 0.5;
+}
+
+#controls>img {
+    transition-duration: 200ms;
+}
+
+#controls img:nth-child(2n+2) {
+    width: 50px;
+    height: 50px;
+}
+
+#controls img:nth-child(3) {
+    width: 70px;
+    height: 70px;
+}
+
+#controls :nth-child(4n+1) {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+
+
+/*droite*/
+
+#right {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        background-color: #272727;
+        color: white;
+        font-family: montserrat;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+    }
+    #loader {
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 999;
+        background-color: #262626;
+        transition-duration: 1s;
+    }
+    #loader img {
+        margin-top: 30vh;
+        width: 80vw;
+    }
+    #right {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+    #left {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+    #center {
+        margin: auto;
+        width: 100vw;
+        height: 100vh;
+    }
+    #entete p:nth-child(1) {
+        opacity: 0.8;
+        font-size: 20pt;
+        margin: 0;
+        margin-bottom: 4%;
+    }
+    #entete p:nth-child(2) {
+        font-weight: bold;
+        margin: 0;
+        font-size: 30pt;
+    }
+    form {
+        text-align: center;
+    }
+    #label {
+        cursor: pointer;
+        color: #ffffff;
+        font-weight: bold;
+        background-color: #1db954;
+        padding: 3% 5%;
+        font-weight: 500;
+        font-size: 20pt;
+        text-transform: uppercase;
+        border-radius: 100px;
+        transition-duration: 500ms;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        right: 15%;
+    }
+    #label:hover {
+        font-size: 96%;
+        opacity: 0.9;
+    }
+    #upload {
+        display: none;
+    }
+    #visu {
+        margin-top: 20%;
+        margin: auto;
+        width: 700px;
+        height: 700px;
+        object-fit: cover;
+    }
+    #canva {
+        width: 700px;
+        height: 700px;
+        margin: auto;
+        position: relative;
+        margin-bottom: 20%;
+        margin-top: 20%;
+        border: none;
+    }
+    #lecteur textarea {
+        width: 80vw;
+        background: none;
+        border: none;
+        border-radius: none;
+        color: white;
+        font-family: montserrat;
+        padding: 0;
+        margin: 0;
+        font-size: 200%;
+    }
+    #lecteur textarea:nth-child(1) {
+        font-weight: bold;
+        font-size: 240%;
+        opacity: 1;
+    }
+    #lecteur textarea:nth-child(2) {
+        opacity: 0.8;
+    }
+    #lecteur {
+        margin: auto;
+        width: 700px;
+    }
+    #timeline {
+        width: 700px;
+    }
+    #controls {
+        display: flex;
+        justify-content: space-around;
+        width: 700px;
+        align-items: center
+    }
+    #time {
+        font-size: 20pt;
+        width: 700px;
+        justify-content: space-between;
+    }
+    #controls>img:hover {
+        opacity: 0.5;
+    }
+    #controls>img {
+        transition-duration: 200ms;
+    }
+    #controls img:nth-child(2n+2) {
+        width: 100px;
+        height: 100px;
+    }
+    #controls img:nth-child(3) {
+        width: 1400px;
+        height: 140px;
+    }
+    #controls :nth-child(4n+1) {
+        width: 60px;
+        height: 60px;
+        margin: 0 20px;
+    }
+    /*droite*/
+    #right {
+        text-align: center;
+    }
+}
